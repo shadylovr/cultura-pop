@@ -1,17 +1,29 @@
 body{
     background-color: rgba(248, 198, 216, 0.973);
     color: rgba(248, 198, 216, 0.973);
+    
+    animation-name: cambioColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .imagen {
     width: 20%;
     height: 90%;
     border-radius: 10px;
-    
+    background-color: #f8ebeb;
+    margin: 0 auto;
+    padding: 10px;   
 }
+.imagen:hover {
+    background-color: #8cfcf6;
+}
+
+
 .primero {
     width: 40%;
     height: 90%;
     border-radius: 10px;
+    
 }
 h1 {
     font-family: "Ramabhadra", sans-serif;
@@ -19,6 +31,12 @@ h1 {
   font-style: normal;
     background-color: rgb(6, 0, 3);
     font-size: 2.5cm;
+    text-align: center;
+    margin: 0;
+
+    animation-name: cambiarBorde;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 p {
     color: black;
@@ -27,4 +45,11 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+   text-align: center;
+}
+
+@keyframes cambiarBorde {
+    0% {border: solid black 3px; font-size: 1em}
+    50% {border: solid rgb(0, 0, 0) 6px; font-size: 2em}
+    100% {border: solid rgba(0, 0, 0, 0.798) 9px; font-size: 4em}
 }
